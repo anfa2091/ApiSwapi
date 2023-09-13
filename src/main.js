@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             resultsDiv.innerHTML = "Cargando...";
 
             // Realizar la solicitud a la API de SWAPI
-            fetch(`https://swapi.dev/api/${searchTerm}`)
+            fetch(`https://swapi.dev/api/${searchTerm}`) 
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`Error en la solicitud: ${response.status}`);
